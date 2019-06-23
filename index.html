@@ -4,53 +4,56 @@
         <title>About Me / Bootstrap</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <!-- Header & Navbar -->
-        <div class="container-fluid header-nav">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="index.html">Jeffrey Davis</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+        <div class="wrapper">
+            <div class="container-fluid d-flex justify-content-start header-nav">
+                <nav class="navbar navbar-expand-sm navbar-dark">
+                    <button id="navbar-toggler" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <span class="navbar-text" id="navbar-text">Jeffrey Davis</span>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        
+            <!-- Main Content -->
+            <div class="container-fluid section">
+                <div class="row justify-content-center heading">
+                    <h2 class="col-lg-6 col-sm-6">About Me</h2>
                 </div>
-            </nav>
+
+                <div class="container img">
+                    <img src="imgs/durangort.jpg" class="img-fluid" alt="A Durango R/T">
+                </div>
+                <div class="container paragraph">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex dolor libero quasi aliquid amet tenetur itaque quae, laudantium ea officia a reprehenderit dignissimos fugiat eligendi quaerat, consequatur fugit excepturi quo?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nobis ea natus aspernatur dolore accusantium sed incidunt sunt nisi. Nobis quis voluptatibus ea sapiente odio repellendus vel placeat fugit. Nemo.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam architecto ullam labore, amet saepe sapiente quas eaque vitae debitis impedit assumenda illo dicta unde necessitatibus voluptatibus repellendus, aspernatur nisi accusantium!</p>
+                </div>
+            </div>
+            <div class="push"></div>
         </div>
 
-        <!-- Main Content -->
-        <div class="container-fluid">
-            <div class="row">
-                <section class="container section">
-                    <div class="heading">
-                        <h2>About Me</h2>
-                    </div>
-                    <hr>
-                    <div class="container-img">
-                        <img src="imgs/durangort.jpg" alt="A Durango R/T">
-                    </div>
-                    <div class="container-p">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex dolor libero quasi aliquid amet tenetur itaque quae, laudantium ea officia a reprehenderit dignissimos fugiat eligendi quaerat, consequatur fugit excepturi quo?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nobis ea natus aspernatur dolore accusantium sed incidunt sunt nisi. Nobis quis voluptatibus ea sapiente odio repellendus vel placeat fugit. Nemo.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam architecto ullam labore, amet saepe sapiente quas eaque vitae debitis impedit assumenda illo dicta unde necessitatibus voluptatibus repellendus, aspernatur nisi accusantium!</p>
-                    </div>
-                </section>
-            </div>
-        </div>
         <div class="container-fluid container-footer">
             <footer class="footer">
                 <p>Copyright &copy;</p>
