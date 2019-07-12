@@ -114,6 +114,11 @@ body {
     color: #fff;
 }
 
+.card-title a {
+    color: #fff;
+    text-decoration: none;
+}
+
 /* Contact Form */
 
 .form-label {
