@@ -1,43 +1,33 @@
-html,
-body {
-    height: 100%;
-    margin: 0;
+* {
+    box-sizing: border-box;
 }
 
 body {
-    background: url(imgs/low_contrast_linen.png);
+    background: url(../imgs/low_contrast_linen.png);
 }
 
 .wrapper {
-    min-height: 100%;
+    width: 100%;
+    min-height: 100vh;
     margin-bottom: -50px;
 }
 
-/* Global Header & Navbar */
-
-.header-nav {
-    /* height: 70px;
-    width: 100%;
-    color: #fff; */
+/* ========== NAVBAR HEADER ========== */
+#navHeader {
     background: #aa0000; 
-    margin-bottom: 40px; 
     border-bottom: 3px solid #b3995d;
 }
 
-#navbar-text {
+#navbarLogo {
+    font-family: 'Boogaloo', cursive;
     font-size: 35px;
     color: #fff;
     text-align: center;
-    padding-bottom: 0;
-    margin-bottom: 12px;
-    margin-right: 15px;
+    margin: 0;
+    padding: 10px;
 }
 
-#navbar-toggler {
-    border-color: rgb(255,255,255);
-}
-
-#navbar-text:hover {
+#navbarLogo:hover {
     color: #b3995d;
     transition: 0.5s ease;
     text-shadow:
@@ -47,23 +37,34 @@ body {
 		1px 1px 0 #000;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.navbar {
+    margin: 0 auto;
+}
+
+#navbarNav .nav-item {
     color: #fff;
-    padding: 0rem 1rem;
+    margin-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    transition: color 1s;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
+#navbarNav .nav-item:hover {
     color: #b3995d;
-    transition: 0.5s ease;
 }
 
-.navbar-text,
-.heading h2 {
-    font-family: 'Boogaloo', cursive;
+/* ===== HAMBURGER MENU ===== */
+.navbar-light .navbar-toggler {
+    border-color: #fff;
+    outline: none;
 }
 
-/* Global Content */
+#toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+}
 
+/* ===== GLOBAL SECTION CONTENT =====  */
 .section {
     background: #fff;
     width: 90%;
@@ -75,12 +76,12 @@ body {
     border-bottom: 2px solid #000;
     padding-top: 10px;
     margin: 0 20px 20px 20px;
+    font-family: 'Boogaloo', cursive;
     font-size: 40px;
     text-align: center;
 }
 
-/* About Me Content */
-
+/* ========== HOME PAGE ========== */
 .container img {
     width: 300px;
     margin: 6px 15px 10px 0;
@@ -88,6 +89,7 @@ body {
 }
 
 .paragraph {
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 2;
     margin-bottom: 20px;
 }
@@ -96,11 +98,18 @@ body {
     padding-bottom: 30px;
 }
 
-/* Portfolio Content */
+/* ========== PORTFOLIO PAGE ========== */
+.portfolio-section {
+    margin-bottom: 20px;
+}
 
 .card {
     margin: 0 0 20px 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card img {
+    height: 210px;
 }
 
 .card-body {
@@ -119,8 +128,11 @@ body {
     text-decoration: none;
 }
 
-/* Contact Form */
+.card-title a:hover {
+    color: #b3995d;
+}
 
+/* ========== CONTACT PAGE ========== */
 .form-label {
     margin-bottom: 5px;
 }
@@ -141,8 +153,7 @@ body {
     color: #000;
 }
 
-/* Global Footer */
-
+/* ========== FOOTER ========== */
 .container-footer {
     padding: 0;
 }
@@ -160,13 +171,9 @@ body {
     text-align: center;
 }
 
-
-
 @media screen and (max-width: 575px) {
     
     .card {
         margin: 0 0 20px 2px;
     }
 }
-
-

@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>About Me / Bootstrap</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!-- Header & Navbar -->
-        <div class="wrapper">
-            <div class="container-fluid d-flex justify-content-start header-nav">
-                <nav class="navbar navbar-expand-sm navbar-dark">
-                    <button id="navbar-toggler" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <span class="navbar-text" id="navbar-text">Jeffrey Davis</span>
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
+
+<head>
+    <title>About Me / Bootstrap</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+    <!-- ===== BOOTSTRAP CDN ===== -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!-- ===== HEADER & NAVBAR ===== -->
+    <div class="wrapper">
+        <div class="container-fluid mb-5 p-0" id="navHeader">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" id="navbarLogo" href="./index.html">
+                    Jeffrey Davis
+                </a>
+                <!-- ===== Hamburger Menu ===== -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" id="toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="index.html">Home</a>
+                        <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-item nav-link" href="contact.html">Contact</a>
                     </div>
-                </nav>
-            </div>
-        
-            <!-- Main Content -->
-            <div class="container-fluid section">
-                <div class="row justify-content-center heading">
-                    <h2 class="col-lg-6 col-sm-6">About Me</h2>
                 </div>
-
-                <div class="container img">
-                    <img src="imgs/durangort.jpg" class="img-fluid" alt="A Durango R/T">
-                </div>
-                <div class="container paragraph">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex dolor libero quasi aliquid amet tenetur itaque quae, laudantium ea officia a reprehenderit dignissimos fugiat eligendi quaerat, consequatur fugit excepturi quo?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nobis ea natus aspernatur dolore accusantium sed incidunt sunt nisi. Nobis quis voluptatibus ea sapiente odio repellendus vel placeat fugit. Nemo.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam architecto ullam labore, amet saepe sapiente quas eaque vitae debitis impedit assumenda illo dicta unde necessitatibus voluptatibus repellendus, aspernatur nisi accusantium!</p>
-                </div>
-            </div>
-            <div class="push"></div>
+            </nav>
         </div>
 
-        <div class="container-fluid container-footer">
-            <footer class="footer">
-                <p>Copyright &copy;</p>
-            </footer>
+        <!-- ===== MAIN CONTENT ===== -->
+        <div class="container-fluid section">
+            <div class="row justify-content-center heading">
+                <h2 class="col-lg-6 col-sm-6">About Me</h2>
+            </div>
+
+            <div class="container img">
+                <img src="assets/imgs/durangort.jpg" class="img-fluid" alt="A Durango R/T">
+            </div>
+            <div class="container paragraph">
+                <p>My name is Jeff, and I'm a future full-stack web developer from Grand Prairie, Texas. I am currently
+                    attending the SMU Coding Bootcamp where I am learning everything from HTML and CSS to Javascript and
+                    NodeJS.</p>
+                <p>I have a wonderful wife and three amazing kids with another on the way. Being able to spend more time
+                    with them is what drives me to learn web development and finally get away from my current career as
+                    a truck driver.</p>
+                <p>In my free time, I spend most of it watching videos and learning something new about coding. But when
+                    I'm not coding, I love bowling, playing basketball, cooking, and finding new places to eat.</p>
+            </div>
         </div>
-    </body>
+        <div class="push"></div>
+    </div>
+
+    <div class="container-fluid container-footer">
+        <footer class="footer">
+            <p>Copyright &copy;</p>
+        </footer>
+    </div>
+
+    <!-- ===== JQUERY CDN ===== -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <!-- ===== BOOTSTRAP/JS CDN ===== -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
